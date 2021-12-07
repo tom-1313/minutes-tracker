@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <!-- <a class="navbar-brand">Dashboard</a> -->
+        <img
+          src="/resources/img/house-door.svg"
+          alt="Dashboard"
+          width="32"
+          height="32"
+        />
+        <button class="btn btn-outline-danger my-2 my-sm-0">Logout</button>
+      </nav>
+    <div class="jumbotron text-center">
+        <h2>Course List</h2>
+        <p>Please select the courses you need to be enrolled in.</p>
+      </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#myModal">Course #1</a>
+        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#myModal">Course #2</a>
+        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#myModal">Course #3</a>
+        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#myModal">Course #4</a>
+        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#myModal">Course #5</a>
+        
+      </div>
+
+            <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Course #</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Would you like to enroll in this course?
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Yes</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
