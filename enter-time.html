@@ -43,7 +43,7 @@
       <br />
 
       <!-- Form Start-->
-      <form action="/" class="needs-validation" method="post" novalidate>
+      <form action="/" class="needs-validation" method="post">
         <!-- Lesson Row -->
         <div class="row">
           <div class="col-md-6"><p class="text-center">Lesson</p></div>
@@ -106,7 +106,7 @@
                 placeholder="hours"
                 required
               />
-              <div class="invalid-feedback">Please enter a number</div>
+              <!-- <div class="invalid-feedback">Please enter a number</div> -->
             </div>
           </div>
           <div class="col-md-3">
@@ -118,7 +118,7 @@
                 id="inputMinutes"
                 placeholder="minutes"
               />
-              <div class="invalid-feedback">Please enter minutes</div>
+              <!-- <div class="invalid-feedback">Please enter minutes</div> -->
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
                 placeholder="hours"
                 required
               />
-              <div class="invalid-feedback">Please enter a number</div>
+              <!-- <div class="invalid-feedback">Please enter a number</div> -->
             </div>
           </div>
           <div class="col-md-3">
@@ -150,16 +150,18 @@
                 id="inputMinutes"
                 placeholder="minutes"
               />
-              <div class="invalid-feedback">Please enter minutes</div>
+              <!-- <div class="invalid-feedback">Please enter minutes</div> -->
             </div>
           </div>
         </div>
 
         <!-- Submission Button -->
         <div class="buttonHolder">
-          <button class="btn btn-primary text-center" href="dashboard.html">
-            Submit
-          </button>
+          <a href="dashboard.html">
+            <button class="btn btn-primary text-center" href="dashboard.html">
+              Submit
+            </button>
+          </a>
         </div>
       </form>
     </div>
