@@ -1,3 +1,15 @@
+body {
+  background-color: navy;
+}
+
+.navbar {
+  background-color: gold;
+}
+
+.card {
+  background-color: gold;
+}
+
 .buttonHolder {
   margin: 30;
   text-align: center;
