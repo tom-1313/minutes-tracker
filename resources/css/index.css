@@ -35,6 +35,15 @@ header {
   position: relative;
 }
 
+.card .card-form {
+  border: 0 !important;
+  width: 75% !important;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+}
+
 h4 {
   margin: 2%;
 }
@@ -63,4 +72,18 @@ h4 {
 .navbar i {
   color: gold;
   margin: 5px;
+}
+
+#submitTime {
+  background-color: navy !important;
+  color: white !important;
+}
+
+#form-container {
+  font-size: larger;
+  font-weight: bold !important;
+}
+
+#form-title {
+  margin-top: 20px;
 }
