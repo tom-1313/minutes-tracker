@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Create Course</title>
+</head>
+<body id="body">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="brand">Minutes Tracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" id="navbarElements">
+              <a href="dashboard.html">
+                <img
+                  src="resources/house-door.svg"
+                  alt="Home"
+                  width="32"
+                  height="32"
+                  class="navbar-img"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="resources/box-arrow-right.svg"
+                  alt="Log Out"
+                  width="32"
+                  height="32"
+                  class="navbar-img"
+                />
+            </div>
+          </div>
+        </div>
+      </nav>
+    <header class="p-5 text-center" id="header">
+            <h1 id="title">Create Course Screen</h1>
+    </header>
+    <!--Form Container-->
+    <div id="formContainer" class="container-fluid">
+        <!--Form-->
+        <form id="form" class="needs-validation" novalidate>
+            <!--Email Label & Input-->
+            <div class="form-group row align-items-center">
+              <label for="inputCourseName" class="col-sm-2 col-form-label-lg" id="courseNameLabel">Course Name:</label>
+              <div class="col-sm-10">
+                <input required type="text" class="form-control form-control-lg" id="inputCourseName" placeholder="(SER 340)">
+              </div>
+            </div>
+            <!--Password Label & Input-->
+            <div class="form-group row align-items-center">
+                <label for="inputLessons" class="col-sm-2 col-form-label-lg" id="lessonsLabel">Number of Lessons:</label>
+                <div class="col-sm-10">
+                  <input required type="number" class="form-control form-control-lg" id="inputLessons" placeholder="(42)">
+                </div>
+              </div>
+            <div class="form-group row align-items-center">
+                <div class="col-sm-10">
+                  <input id="submitBtn" type="button" value="Create Course" class="btn-lg btn-primary" onclick=validateForm()></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+<script type="text/javascript" src="createCourse.js"></script>
+</html>
