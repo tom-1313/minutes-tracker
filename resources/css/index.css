@@ -104,6 +104,18 @@ h4 {
   text-align: center;
 }
 
+#container {
+  margin: 100px;
+  padding: 0px;
+  border: 10px solid white;
+  background-color: gold;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+}
+
 #courseNameLabel, #lessonsLabel, 
 #inputCourseName, #inputLessons {
   font-size: 25px;
