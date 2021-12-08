@@ -87,3 +87,8 @@ h4 {
 #form-title {
   margin-top: 20px;
 }
+
+#preview-data {
+  font-size: medium;
+  font-weight: bold !important;
+}
