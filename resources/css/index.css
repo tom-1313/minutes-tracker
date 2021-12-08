@@ -2,8 +2,13 @@ body {
   background-color: navy;
 }
 
+header {
+  background-color: gold;
+  padding: 0px;
+}
+
 .navbar {
-  background-color: gold !important;
+  background-color: navy !important;
 }
 
 .card {
@@ -23,7 +28,7 @@ body {
 
 .card {
   border: 10px solid white;
-  width: 60rem;
+  width: 75%;
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
@@ -39,11 +44,6 @@ h4 {
   margin: 2%;
 }
 
-.navbar-img {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .topRight {
   position: absolute;
   right: 10px;
@@ -51,7 +51,16 @@ h4 {
   z-index: 2;
 }
 
+.topRight i {
+  color: navy;
+}
+
 .col-sm-1 {
   padding-right: 0;
   padding-left: 0;
+}
+
+.navbar i {
+  color: gold;
+  margin: 5px;
 }
