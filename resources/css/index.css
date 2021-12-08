@@ -1,0 +1,44 @@
+.buttonHolder {
+  margin: 30;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 60rem;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+}
+
+h4 {
+  margin: 2%;
+}
+
+.card-contents {
+  color: inherit;
+  margin: 2%;
+}
+
+.navbar-img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.topRight {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+}
+
+.col-sm-1 {
+  padding-right: 0;
+  padding-left: 0;
+}
