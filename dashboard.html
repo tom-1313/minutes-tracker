@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./resources/css/index.css" />
     <title>Dashboard</title>
   </head>
-  <body>
+  <body id="body">
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light justify-content-between">
-      <a href="dashboard.html">
+    <nav class="navbar navbar-light justify-content-between" id="navbar">
+      <a href="dashboard.html" id="navItem">
         <img
           src="/resources/img/house-door.svg"
           alt="Dashboard"
@@ -25,19 +25,28 @@
         />
       </a>
       <div>
-        <a href="#">
+        <a href="createCourse.html" id="navItem">
           <img
             src="/resources/img/plus-circle.svg"
-            alt="Dashboard"
+            alt="Add Course"
             width="32"
             height="32"
             class="navbar-img"
           />
         </a>
-        <a href="#">
+        <a href="enroll.html" id="navItem">
+          <img
+            src="/resources/img/plus-circle.svg"
+            alt="Add Course"
+            width="32"
+            height="32"
+            class="navbar-img"
+          />
+        </a>
+        <a href="#" id="navItem">
           <img
             src="/resources/img/box-arrow-right.svg"
-            alt="Dashboard"
+            alt="Log Out"
             width="32"
             height="32"
             class="navbar-img"
@@ -45,6 +54,11 @@
         </a>
       </div>
     </nav>
+
+    <!--Header-->
+    <header class="p-5 text-center" id="header">
+      <h1 id="title">Dashboard</h1>
+    </header>
 
     <!-- Class cards -->
     <div class="container">

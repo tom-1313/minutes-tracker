@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./resources/css/index.css" />
     <title>Preview</title>
   </head>
-  <body>
+  <body id="body">
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light justify-content-between">
-      <a href="dashboard.html">
+    <nav class="navbar navbar-light justify-content-between" id="navbar">
+      <a href="dashboard.html" id="navItem">
         <img
           src="/resources/img/house-door.svg"
           alt="Dashboard"
@@ -25,10 +25,10 @@
           class="navbar-img"
         />
       </a>
-      <a href="#">
+      <a href="#" id="navItem">
         <img
           src="/resources/img/box-arrow-right.svg"
-          alt="Dashboard"
+          alt="Log Out"
           width="32"
           height="32"
           class="navbar-img"
@@ -36,13 +36,17 @@
       </a>
     </nav>
 
+    <!--Header-->
+    <header class="p-5 text-center" id="header">
+      <h3 class="text-center">Lesson Time Entries</h3>
+      <p class="text-center">
+        Below are all the lessons for the course. Under each lesson is a student
+        time entry in mintues.
+      </p>
+    </header>
+
     <!-- Lessons and Entries -->
-    <h3 class="text-center">Lesson Time Entries</h3>
-    <p class="text-center">
-      Below are all the lessons for the course. Under each lesson is a student
-      time entry in mintues.
-    </p>
-    <div class="container text-center">
+    <div class="container text-center" id="formContainer">
       <div class="row justify-content-center" id="underline-border">
         <div class="col-sm-1">
           <p class="border-bottom border-left border-dark">Lesson</p>
