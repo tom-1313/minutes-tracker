@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-  background-color: gold;
+  background-color: gold !important;
 }
 
 .card {
@@ -22,6 +22,7 @@ body {
 }
 
 .card {
+  border: 10px solid white;
   width: 60rem;
   margin-top: 5%;
   margin-left: 10%;
