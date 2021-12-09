@@ -155,6 +155,68 @@
   background-color: #1e90ff;
 }
 
-.btn {
-  background-color: darkgrey;
+#submit-btn {
+    width: 100%;
+    margin-left: 0%;
+
+}
+
+#create-account {
+    position: relative;
+    left: 402px;
+}
+
+/* .form-control {
+    width: 100%;
+    margin-left: 50%;    
+} */
+
+.col-lg-6 {
+    width: 100%;
+    margin-left: 25%;
+}
+
+.jumbotron {
+    background-color:gold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color:navy;
+}
+
+p {
+    color:navy;
+}
+
+body {
+    background-color: navy;
+}
+
+.list-group-item {
+    background-color:white;
+    color:navy;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 270px;
+}
+
+#label {
+    color: gold;
+    font-size: larger;
+
+}
+
+.navbar {
+    background-color: rgb(3, 3, 156) !important;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    color: white;
+}
+
+.checkbox {
+    color: white;
 }
