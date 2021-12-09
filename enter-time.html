@@ -9,167 +9,165 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./resources/css/index.css" />
     <title>Enter Time</title>
   </head>
   <body id="body">
     <!-- Navbar -->
-    <nav class="navbar navbar-lightjustify-content-between" id="navbar">
-      <a href="dashboard.html" id="navItem">
-        <img
-          src="/resources/img/house-door.svg"
-          alt="Dashboard"
-          width="32"
-          height="32"
-          class="navbar-img"
-        />
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a href="dashboard.html">
+        <i class="fas fa-home fa-2x"></i>
       </a>
-      <a href="#" id="navItem">
-        <img
-          src="/resources/img/box-arrow-right.svg"
-          alt="Dashboard"
-          width="32"
-          height="32"
-          class="navbar-img"
-        />
-      </a>
+      <div>
+        <a href="#"><i class="fas fa-sign-out-alt fa-2x"></i></a>
+      </div>
     </nav>
 
-    <!--Header-->
-    <header class="p-5 text-center" id="header">
-      <h1 id="title">Input Lesson Time</h1>
+    <!-- Header -->
+    <header class="p-5 text-center">
+      <h1>Enter Time</h1>
     </header>
+    <div class="container" id="form-container">
+      <div class="card card-form">
+        <p class="text-center" id="form-title">
+          Please select a lesson and enter the time you spent outside of class
+          on the following activities
+        </p>
+        <br />
 
-    <div class="container" id="formContainer">
-      <h4 class="text-center">Enter Time</h4>
-      <p class="text-center">
-        Please select a lesson and enter the time you spent outside of class on
-        the following activities
-      </p>
-      <br />
-
-      <!-- Form Start-->
-      <form action="/" class="needs-validation" method="post">
-        <!-- Lesson Row -->
-        <div class="row">
-          <div class="col-md-6"><p class="text-center">Lesson</p></div>
-          <div class="col-md-6">
-            <select id="select">
-              <option value="Lesson 1">Lesson 1</option>
-              <option value="Lesson 2">Lesson 2</option>
-              <option value="Lesson 3">Lesson 3</option>
-              <option value="Lesson 4">Lesson 4</option>
-              <option value="Lesson 5">Lesson 5</option>
-              <option value="Lesson 6">Lesson 6</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Homework Row -->
-        <div class="row">
-          <div class="col-md-6">
-            <p class="text-center">Homework</p>
-          </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <!-- <label for="inputHomework">Homework</label> -->
-              <input
-                type="text"
-                class="form-control"
-                id="inputHomework"
-                placeholder="hours"
-                required
-              />
-              <div class="invalid-feedback">Please enter a number</div>
+        <!-- Form Start-->
+        <form action="/" class="needs-validation" method="post">
+          <!-- Lesson Row -->
+          <div class="row">
+            <div class="col-md-5"><p class="text-center">Lesson</p></div>
+            <div class="col-md-7">
+              <select id="select">
+                <option value="Lesson 1">Lesson 1</option>
+                <option value="Lesson 2">Lesson 2</option>
+                <option value="Lesson 3">Lesson 3</option>
+                <option value="Lesson 4">Lesson 4</option>
+                <option value="Lesson 5">Lesson 5</option>
+                <option value="Lesson 6">Lesson 6</option>
+              </select>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <!-- <label for="inputMinutes">Minutes</label> -->
-              <input
-                type="text"
-                class="form-control"
-                id="inputMinutes"
-                placeholder="minutes"
-              />
-              <div class="invalid-feedback">Please enter minutes</div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Project Row -->
-        <div class="row">
-          <div class="col-md-6">
-            <p class="text-center">Project</p>
-          </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <!-- <label for="inputHomework">Homework</label> -->
-              <input
-                type="text"
-                class="form-control"
-                id="inputHomework"
-                placeholder="hours"
-                required
-              />
-              <!-- <div class="invalid-feedback">Please enter a number</div> -->
+          <!-- Homework Row -->
+          <div class="row">
+            <div class="col-md-5">
+              <p class="text-center">Homework</p>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <!-- <label for="inputHomework">Homework</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputHomework"
+                  placeholder="hours"
+                  required
+                />
+                <div class="invalid-feedback">Please enter a number</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <!-- <label for="inputMinutes">Minutes</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputMinutes"
+                  placeholder="minutes"
+                />
+                <div class="invalid-feedback">Please enter minutes</div>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <!-- <label for="inputMinutes">Minutes</label> -->
-              <input
-                type="text"
-                class="form-control"
-                id="inputMinutes"
-                placeholder="minutes"
-              />
-              <!-- <div class="invalid-feedback">Please enter minutes</div> -->
-            </div>
-          </div>
-        </div>
 
-        <!-- Study Time Row -->
-        <div class="row">
-          <div class="col-md-6">
-            <p class="text-center">Study Time</p>
-          </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <!-- <label for="inputHomework">Homework</label> -->
-              <input
-                type="text"
-                class="form-control"
-                id="inputHomework"
-                placeholder="hours"
-                required
-              />
-              <!-- <div class="invalid-feedback">Please enter a number</div> -->
+          <!-- Project Row -->
+          <div class="row">
+            <div class="col-md-5">
+              <p class="text-center">Project</p>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <!-- <label for="inputHomework">Homework</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputHomework"
+                  placeholder="hours"
+                  required
+                />
+                <!-- <div class="invalid-feedback">Please enter a number</div> -->
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <!-- <label for="inputMinutes">Minutes</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputMinutes"
+                  placeholder="minutes"
+                />
+                <!-- <div class="invalid-feedback">Please enter minutes</div> -->
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <!-- <label for="inputMinutes">Minutes</label> -->
-              <input
-                type="text"
-                class="form-control"
-                id="inputMinutes"
-                placeholder="minutes"
-              />
-              <!-- <div class="invalid-feedback">Please enter minutes</div> -->
-            </div>
-          </div>
-        </div>
 
-        <!-- Submission Button -->
-        <div class="buttonHolder">
-          <a href="dashboard.html">
-            <button class="btn btn-primary text-center" href="dashboard.html">
-              Submit
-            </button>
-          </a>
-        </div>
-      </form>
+          <!-- Study Time Row -->
+          <div class="row">
+            <div class="col-md-5">
+              <p class="text-center">Study Time</p>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <!-- <label for="inputHomework">Homework</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputHomework"
+                  placeholder="hours"
+                  required
+                />
+                <!-- <div class="invalid-feedback">Please enter a number</div> -->
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <!-- <label for="inputMinutes">Minutes</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputMinutes"
+                  placeholder="minutes"
+                />
+                <!-- <div class="invalid-feedback">Please enter minutes</div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Submission Button -->
+          <div class="buttonHolder">
+            <a href="dashboard.html">
+              <button
+                class="btn text-center"
+                href="dashboard.html"
+                id="submitTime"
+              >
+                Submit
+              </button>
+            </a>
+          </div>
+        </form>
+      </div>
     </div>
 
     <!-- Bootstrap scripts -->
