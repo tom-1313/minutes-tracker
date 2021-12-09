@@ -5,50 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <title>Document</title>
 </head>
-<body>
-       <!-- Navbar -->
-       <nav class="navbar navbar-light bg-light justify-content-between">
-        <a href="dashboard.html">
-          <img
-            src="/resources/img/house-door.svg"
-            alt="Dashboard"
-            width="32"
-            height="32"
-            class="navbar-img"
-          />
-        </a>
-        <div>
-          <a href="#">
-            <img
-              src="/resources/img/plus-circle.svg"
-              alt="Dashboard"
-              width="32"
-              height="32"
-              class="navbar-img"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="/resources/img/box-arrow-right.svg"
-              alt="Dashboard"
-              width="32"
-              height="32"
-              class="navbar-img"
-            />
-          </a>
-        </div>
+<body id="body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light justify-content-between" id="navbar">
+        <!-- <a class="navbar-brand">Dashboard</a> -->
+        <img id="navItem"
+          src="/resources/img/house-door.svg"
+          alt="Dashboard"
+          width="32"
+          height="32"
+        />
+        <button class="btn btn-outline-danger my-2 my-sm-0">Logout</button>
       </nav>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center"  id="header">
         <h2>Course List</h2>
         <p>Please select the courses you need to be enrolled in.</p>
-      </div>
+    </div>
     <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action text-center" data-toggle="modal" data-target="#myModal"><strong>Course #1</strong></a>
         <a href="#" class="list-group-item list-group-item-action text-center" data-toggle="modal" data-target="#myModal"><strong>Course #2</strong></a>
@@ -56,7 +35,6 @@
         <a href="#" class="list-group-item list-group-item-action text-center" data-toggle="modal" data-target="#myModal"><strong>Course #4</strong></a>
         <a href="#" class="list-group-item list-group-item-action text-center" data-toggle="modal" data-target="#myModal"><strong>Course #5</strong></a>
         <a href="#" class="list-group-item list-group-item-action text-center" data-toggle="modal" data-target="#myModal"><strong>Course #6</strong></a>
-        
       </div>
 
             <!-- The Modal -->
