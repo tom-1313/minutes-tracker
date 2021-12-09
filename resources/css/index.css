@@ -232,10 +232,6 @@ h4 {
   background-color: #1e90ff;
 }
 
-/* .btn {
-  background-color: darkgrey;
-} */
-
 .navbar i {
   color: gold;
   margin: 5px;
@@ -258,4 +254,8 @@ h4 {
 #preview-data {
   font-size: medium;
   font-weight: bold !important;
+}
+
+#editLesson {
+  margin-top: 5px;
 }
