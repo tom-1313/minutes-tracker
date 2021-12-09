@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Create Account</title>
+</head>
+<body id="body">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="brand">Minutes Tracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" id="navbarElements">
+              <a class="nav-link active" aria-current="page" href="enroll.html" id="navItem">Log In</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <header class="p-5 text-center" id="header">
+            <h1 id="title">Create Account Screen</h1>
+    </header>
+    <!--Form Container-->
+    <div id="formContainer" class="container-fluid">
+        <!--Form-->
+        <form id="form" class="needs-validation" novalidate>
+            <!--Email Label & Input-->
+            <div class="form-group row align-items-center">
+              <label for="inputEmail" class="col-sm-2 col-form-label-lg" id="emailLabel">Email:</label>
+              <div class="col-sm-10">
+                <input required type="email" class="form-control form-control-lg" id="inputEmail" placeholder="(example@quinnipiac.edu)">
+              </div>
+            </div>
+            <!--Password Label & Input-->
+            <div class="form-group row align-items-center">
+                <label for="inputPassword" class="col-sm-2 col-form-label-lg" id="passwordLabel">Password:</label>
+                <div class="col-sm-10">
+                  <input required type="password" class="form-control form-control-lg" id="inputPassword" placeholder="(Password)">
+                </div>
+              </div>
+            <!--Confirm Password Label & Input-->
+            <div class="form-group row align-items-center">
+              <label for="inputConfirmPassword" class="col-sm-2 col-form-label-lg" id="cPasswordLabel">Confirm Password:</label>
+              <div class="col-sm-10">
+                <input required type="password" class="form-control form-control-lg" id="inputConfirmPassword" placeholder="(Password)">
+              </div>
+            </div>
+            <!--Select Course Checkbox-->
+            <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxes()">
+                  <select>
+                    <option>Select Courses</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes">
+                  <label for="one">
+                    <input type="checkbox" id="one" onchange="display(this.id)"/>SER340</label>
+                  <label for="two">
+                    <input type="checkbox" id="two" onchange="display(this.id)"/>CSC375</label>
+                  <label for="three">
+                    <input type="checkbox" id="three" onchange="display(this.id)"/>SER325</label>
+                  <label for="four">
+                    <input type="checkbox" id="four" onchange="display(this.id)"/>Dummy1</label>
+                  <label for="five">
+                    <input type="checkbox" id="five" onchange="display(this.id)"/>Dummy2</label>
+                </div>
+              </div>
+            <div>
+                <label id="selectedCourses"></label>
+            </div>
+            <div class="form-group row align-items-center">
+                <div class="col-sm-10">
+                  <input id="submitBtn" type="button" value="Create Account" class="btn-lg btn-primary" onclick=validateForm()></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+<script type="text/javascript" src="createAccount.js"></script>
+</html>
