@@ -1,3 +1,4 @@
+
 #body {
   margin: 0px;
   padding: 0px;
@@ -158,22 +159,26 @@
 #submit-btn {
     width: 100%;
     margin-left: 0%;
-
 }
 
-#create-account {
-    position: relative;
-    left: 402px;
+#submit-btn, #create-account {
+    width: 150px;
+    padding: 10px;
+    background-color:navy;
+    color: gold;
 }
 
-/* .form-control {
-    width: 100%;
-    margin-left: 50%;    
-} */
+.fas {
+    color: gold;
+}
 
-.col-lg-6 {
+#login-form {
     width: 100%;
     margin-left: 25%;
+}
+
+#email {
+    color: navy;
 }
 
 .jumbotron {
@@ -182,12 +187,13 @@
     padding-bottom: 20px;
 }
 
-h2 {
+#course-list, #login {
     color:navy;
 }
 
 p {
     color:navy;
+    padding: 10px;
 }
 
 body {
@@ -195,11 +201,12 @@ body {
 }
 
 .list-group-item {
-    background-color:white;
+    
     color:navy;
+    background-color: white;
     margin-bottom: 10px;
-    width: 60%;
-    margin-left: 270px;
+    width: 50%;
+    margin-left: 25%;
 }
 
 #label {
@@ -208,15 +215,46 @@ body {
 
 }
 
-.navbar {
-    background-color: rgb(3, 3, 156) !important;
-    padding-bottom: 10px;
-}
-
-.form-group {
+#navbar {
+    background-color: navy;
     color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #navItem {
+    color: gold !important;
+    margin: 0px;
+    padding: 0px;
+  }
+
+#email, #pwd {
+    color: navy;
 }
 
 .checkbox {
     color: white;
+    float: left;
 }
+
+#brand {
+    color: gold;
+}
+
+#formcontainer {
+    margin: 60px;
+    padding: 30px;
+    border: 10px solid white;
+    background-color: gold !important;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  #card-bkgd {
+      background-color: gold;
+      border: none;
+  }
+
