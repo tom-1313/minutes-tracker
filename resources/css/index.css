@@ -72,7 +72,6 @@ h4 {
 #body {
   margin: 0px;
   padding: 0px;
-  border: black solid 5px;
   overflow: auto;
   background-color: navy;
   position: absolute;
@@ -84,7 +83,7 @@ h4 {
   max-width: 100%;
 }
 
-#header{
+#header {
   margin: 0px;
   padding: 0px;
   background-color: gold;
@@ -97,7 +96,7 @@ h4 {
   margin: 0px;
   padding: 0px;
   font-size: 40px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #navbar {
@@ -142,10 +141,12 @@ h4 {
   text-align: center;
 }
 
-#courseNameLabel, #lessonsLabel, 
-#inputCourseName, #inputLessons {
+#courseNameLabel,
+#lessonsLabel,
+#inputCourseName,
+#inputLessons {
   font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: navy;
   padding: 20px;
 }
@@ -167,10 +168,14 @@ h4 {
   float: right;
 }
 
-#emailLabel, #passwordLabel, #cPasswordLabel, 
-#inputConfirmPassword, #inputPassword, #inputEmail {
+#emailLabel,
+#passwordLabel,
+#cPasswordLabel,
+#inputConfirmPassword,
+#inputPassword,
+#inputEmail {
   font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: navy;
   padding: 20px;
 }
@@ -225,13 +230,12 @@ h4 {
 
 #checkboxes label:hover {
   background-color: #1e90ff;
-
 }
 
-.btn {
-  background-color:darkgrey;
-}
-  
+/* .btn {
+  background-color: darkgrey;
+} */
+
 .navbar i {
   color: gold;
   margin: 5px;
