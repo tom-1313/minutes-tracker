@@ -32,7 +32,7 @@
             <div class="row">
                <div class="col-lg-6" id="login-form">
                 <p class="text-center">Please enter your information below to log in to the minutes tracker.</p>
-                 <form action="/action_page.php">
+                 <form>
                     <div class="form-group">
                     <label for="email">Quinnipiac Email:</label>
                     <input type="email" class="form-control" id="email" required>
@@ -42,11 +42,12 @@
                   <input type="password" class="form-control" id="pwd" required>
                 </div>
                 <div class="checkbox">
+                  <button onclick=checkUser() id="check">Are You A Faculty User?</button>
                   <label><input type="checkbox"> Remember me</label>
                 </div>
                 <br>
                 <div class="text-center btn-group">
-                  <a href="enroll.html">
+                  <a href="dashboardStudent.html" id="logInBtn">
                     <input value="Submit" class="btn" id="submit-btn">
                   </a>
                   <p class="text-center">OR</p>
@@ -60,4 +61,5 @@
       </div>  
     </div> 
 </body>
+<script type="text/javascript" src="createCourse.js"></script>
 </html>

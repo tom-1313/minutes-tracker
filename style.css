@@ -258,3 +258,8 @@ body {
       border: none;
   }
 
+  #check {
+      background-color: gold !important;
+      border: gold !important;
+      color: navy;
+  }
