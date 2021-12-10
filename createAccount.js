@@ -46,7 +46,7 @@
       }
       
       if(emailValid == true && passwordValid == true && passwordConfirmValid == true) {
-        window.location.href="dashboard.html";
+        window.location.href="dashboardStudent.html";
       }
     }
     

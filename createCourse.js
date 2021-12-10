@@ -35,4 +35,14 @@ if(courseNameValid == true && lessonsValid == true) {
 
 }
 
+function checkUser() {
+    if (document.getElementById("check").innerHTML == "Are You A Faculty User?") {
+        document.getElementById("check").innerHTML = "Are You A Student User?";
+        document.getElementById("logInBtn").href="dashboard.html";
+    } else {
+        document.getElementById("check").innerHTML = "Are You A Faculty User?";
+        document.getElementById("logInBtn").href="dashboardStudent.html";
+    }
+}
+
 
